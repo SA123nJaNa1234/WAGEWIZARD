@@ -13,9 +13,9 @@ SalaryForce is an end-to-end machine learning pipeline that:
 • Collects job data  
 • Preprocesses and extracts features  
 • Trains multiple regression models  
-• Serves predictions through a REST API
+• Serves predictions through a REST API  
 
-The system predicts expected salaries for software/AI roles using structured job attributes.
+The system predicts expected salaries for software and AI roles using structured job attributes.
 
 ---
 
@@ -27,7 +27,7 @@ Flask
 Pandas  
 NumPy  
 Requests (API calls)  
-JSearch API (job data source) 
+JSearch API (job data source)
 
 ---
 
@@ -45,7 +45,7 @@ Best model: **Gradient Boosting**
 
 ## API Example
 
-Request:
+### Request
 
 POST `/predict`
 
@@ -55,26 +55,3 @@ POST `/predict`
   "is_remote": true,
   "skills_count": 5
 }
-
-Response:
-{
-  "experience_level": "Senior", 
-"is_remote": "true", 
-"predicted_salary": 117047.90245257698, "skills_count": 5, 
-"status": "success"
-}
-
-## Model Evaluation
-
-### Predictions vs Actual Salaries
-
-This plot compares the predicted salaries with the true salaries from the test dataset.
-
-![Predictions Plot](predictions.png)
-
-### Residual Analysis
-
-Residuals show the difference between predicted and actual salaries.
-A well-performing regression model should have residuals randomly distributed around zero.
-
-![Residuals Plot](residuals.png)
