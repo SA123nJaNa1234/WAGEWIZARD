@@ -1,4 +1,4 @@
-# SalaryForce
+# WageWizard
 
 Machine learning API that predicts job salaries based on experience level, remote status, and number of skills.
 
